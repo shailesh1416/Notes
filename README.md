@@ -27,11 +27,12 @@
      [Install]
      WantedBy=multi-user.target
      ```
-    - Hosted file using python server
-    - downloaded file to /tmp on target using wget
-    - start a listner on attcker machine
-    - enabled and started the service
-    - We get a root access
+
+- Hosted file using python server
+- downloaded file to /tmp on target using wget
+- start a listner on attcker machine
+- enabled and started the service
+- We get a root access
 
  ISSUES/Learnings: 
  1. curly quote V/S straight quote in bash command.
