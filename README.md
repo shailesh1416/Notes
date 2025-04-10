@@ -1,5 +1,5 @@
 # TRY HACK ME NOTES
-> LAB : Vulversity
+> LAB : Vulnversity
 1. Reconnaissance  : Search active services on target system, OS, Versions
 2. Bruteforce directories using gobuster to find any vulnerable entry points
      - /internal/ allowed to upload files
@@ -31,11 +31,10 @@
     - enabled and started the service
     - We get a root access
 
- ISSUES: 
+ ISSUES/Learnings: 
  1. curly quote V/S straight quote in bash command.
 
  2. Python script used to enumerate file extension allowed to upload:
-================================================================
 ```
 import requests
 import os
@@ -64,7 +63,6 @@ for ext in extensions:
     original = new_filename
 os.rename(new_filename, "index.php")
 ```
-===============================================================
 
 
 
