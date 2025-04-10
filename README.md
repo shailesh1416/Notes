@@ -36,6 +36,7 @@
 
  2. Python script used to enumerate file extension allowed to upload:
 ================================================================
+```
 import requests
 import os
 
@@ -62,6 +63,7 @@ for ext in extensions:
 
     original = new_filename
 os.rename(new_filename, "index.php")
+```
 ===============================================================
 
 
