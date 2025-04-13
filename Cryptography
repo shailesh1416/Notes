@@ -1,0 +1,22 @@
+Creating a private key
+  - openssl genrsa -out private-key.pem 2048
+Creating a public key for private key
+  - openssl rsa -in private-key.pem -pubout -out public-key.pem
+See key
+ - openssl rsa -in private-key.pem -text -noout
+
+Encrypt using reciepients public key
+  - openssl pkeyutl -encrypt -in plaintext.txt -out ciphertext -inkey public-key.pem -pubin
+Decrypt using private key
+  - openssl pkeyutl -decrypt -in ciphertext -inkey private-key.pem -out decrypted.txt
+
+DHE
+ - seeprime number : openssl dhparam -in dhparams.pem -text -noout
+
+
+Hashing
+- SHA224, SHA256, SHA384, SHA512
+- RIPEMD160
+
+Cteating HMAC messgae
+- hmac256 s!Kr37 message.txt
