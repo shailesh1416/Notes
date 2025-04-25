@@ -21,8 +21,18 @@ Hashing
 Cteating HMAC messgae
 - hmac256 s!Kr37 message.txt
 
+COmmand to check hash mode for hash cat:
+
 #Tools for stegnography
 1. stegseek
 2. steghide
 
 - cat filename.out to see hidden content
+
+
+
+gbd
+pwntool
+hashcat
+python
+
